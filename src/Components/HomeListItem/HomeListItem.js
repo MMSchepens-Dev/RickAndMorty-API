@@ -1,10 +1,10 @@
-export default function HomeListItem({dato,otroDato}){
-  const mostrar =()=>{
-    console.log(otroDato)
-    alert(otroDato)
-  }
+import './HomeListItem.css';
+import {Link} from "react-router-dom";
+
+export default function HomeListItem({dato,infoPath}){
+  
 
   return(
-    <li onClick={mostrar}>{dato}</li>
+    <li className="boton"><Link to={infoPath}>{dato}</Link></li>
   )
 }

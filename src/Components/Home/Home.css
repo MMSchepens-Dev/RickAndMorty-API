@@ -1,5 +1,38 @@
-.Home {
-  background-color: grey;
-  color: white;
-  border-radius: 15px;
+.home {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
 }
+
+.home-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffffe6;
+  color: #344d67;
+  height: 500px;
+  width: 500px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  padding: 40px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  padding: 40px!important;
+  font-weight: 600;
+}
+
+

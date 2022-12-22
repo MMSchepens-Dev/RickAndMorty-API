@@ -1,0 +1,13 @@
+.title {
+  font-family: 'Raleway', sans-serif;
+  color: #6ECCAF;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 20px 20px 0;
+}
+
+.filterSection {
+  width: 100vw;
+  flex-wrap: wrap;
+}
