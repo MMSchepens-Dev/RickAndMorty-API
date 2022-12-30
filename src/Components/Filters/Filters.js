@@ -1,10 +1,9 @@
 import './Filters.css';
-import {Fragment} from 'react';
 
 export default function Filters({nombreFiltro,datoFiltro,muestraValor}) {
   return(
       
-      <div className="filters form-check form-switch">
+      <div className="filters form-check form-switch px-5 py-2">
         <input
           className="Input form-check-input" 
           type="checkbox" 

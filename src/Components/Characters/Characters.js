@@ -38,14 +38,16 @@ export default function Characters() {
     
 }
 
-  const mostrarInfo =async ()=>{
-      let dato= await traerInfo()
-      let infoPersonajes= dato.results
-      setDatos(infoPersonajes)
-      setInfoCompleta(infoPersonajes)
-}
+  
+
 useEffect(()=>{
-    mostrarInfo()
+  const mostrarInfo =async ()=>{
+    let dato= await traerInfo()
+    let infoPersonajes= dato.results
+    setDatos(infoPersonajes)
+    setInfoCompleta(infoPersonajes)
+  }  
+  mostrarInfo()
   },[])
 
   
@@ -54,15 +56,20 @@ useEffect(()=>{
       <Navegation />
       <h2 className="title">Filters</h2>
 
-      <section className="filterSection p-2 d-flex">
-        <Filters nombreFiltro="Character alive" datoFiltro="Alive" muestraValor={mostrarValor}/>
-        <Filters nombreFiltro="Character Dead" datoFiltro="Dead" muestraValor={mostrarValor}/>
-        <Filters nombreFiltro="Male" datoFiltro="Male" muestraValor={mostrarValor}/>
-        <Filters nombreFiltro="Female" datoFiltro="Female" muestraValor={mostrarValor}/>
-        <Filters nombreFiltro="Origin Unknown" datoFiltro="unknown" muestraValor={mostrarValor}/>
+      <section className="filterSection py-5">
+        <div className="d-flex justify-content-between flex-wrap">
+          <Filters nombreFiltro="Character alive" datoFiltro="Alive" muestraValor={mostrarValor}/>
+          <Filters nombreFiltro="Character Dead" datoFiltro="Dead" muestraValor={mostrarValor}/>
+          <Filters nombreFiltro="Male" datoFiltro="Male" muestraValor={mostrarValor}/>
+          <Filters nombreFiltro="Female" datoFiltro="Female" muestraValor={mostrarValor}/>
+          <Filters nombreFiltro="Origin Unknown" datoFiltro="unknown" muestraValor={mostrarValor}/>
+        </div>
+
       </section>
       
+      <section className='cards'>
       <SectionCards datos={datos}/>
+      </section>
     </Fragment>
     
   )

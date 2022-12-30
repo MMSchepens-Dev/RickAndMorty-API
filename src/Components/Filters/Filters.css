@@ -2,17 +2,10 @@
   background-color:#344D67; 
   color: #6ECCAF;
   border-radius: 8px;
-  padding-right: 3rem!important;
-  padding-left: 3rem!important;
-  margin-bottom: 0.125rem;
-  padding-top: 0.5rem!important;
-  padding-bottom: 0.5rem!important;
-  display: flex;
-  align-items: center;
   gap: 6px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  margin: 2px auto;
+  margin: 2px;
 }
 
 .Input {
