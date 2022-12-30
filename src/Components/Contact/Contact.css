@@ -7,14 +7,15 @@
 }
 
 .contactTitle {
-  padding: 40px;
+  width: 600px;
+  padding: 40px!important;
   color: #223142;
   font-size: 35px;
 }
 
 .formTitle {
   color: #223142;
-  margin-left: 30px;
+  margin: 30px;
 }
 
 .botonForm {
