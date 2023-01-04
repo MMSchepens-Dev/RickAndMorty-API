@@ -19,7 +19,7 @@ const mostrar=()=>{
        <div className="contactDiv">
         <h2 className="contactTitle">Contact</h2>
         <h3 className="formTitle">Leave us your information so we can contact you</h3>
-        <form className="form row g-3 mx-4">
+        <form  action="https://formspree.io/f/mpzezpej" method="post" className="form row g-3 mx-4">
 
           <div className="col-md-6">
             <label htmlFor="nombre" className="form-label">Name</label>
